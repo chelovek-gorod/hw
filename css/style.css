@@ -1,0 +1,70 @@
+* {
+    text-align: center;
+}
+
+.img-animation-container {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+}
+
+.img-animation-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img2-1 {animation: img2-1 2s infinite linear;}
+.img2-2 {animation: img2-2 2s infinite linear;}
+
+.img4-1 {animation: img4-1 4s infinite linear;}
+.img4-2 {animation: img4-2 4s infinite linear;}
+.img4-3 {animation: img4-3 4s infinite linear;}
+.img4-4 {animation: img4-4 4s infinite linear;}
+
+@keyframes img2-1 {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    50% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes img2-2 {
+    0% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes img4-1 {
+    0% {opacity: 1;}
+    20% {opacity: 1;}
+    25% {opacity: 0;}
+    95% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes img4-2 {
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+    25% {opacity: 1;}
+    45% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes img4-3 {
+    0% {opacity: 0;}
+    45% {opacity: 0;}
+    50% {opacity: 1;}
+    70% {opacity: 1;}
+    75% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes img4-4 {
+    0% {opacity: 0;}
+    70% {opacity: 0;}
+    75% {opacity: 1;}
+    95% {opacity: 1;}
+    100% {opacity: 0;}
+}
