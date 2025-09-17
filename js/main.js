@@ -71,9 +71,11 @@ function addSetOfExercises(exercisesArr) {
 function addExerciseData(exercise) {
     main.innerHTML += `<h2>${EXERCISES_DATA[exercise].name}</h2>`
     addImages(exercise)
+    const unit = EXERCISES_DATA[exercise].reps.unit
+    const weight = 'weight' in EXERCISES_DATA[exercise].reps ? EXERCISES_DATA[exercise].reps.weight : null
     main.innerHTML += `<div>Подходы : ${EXERCISES_DATA[exercise].sets}</div>`
-    main.innerHTML += `<div>Повторы : ${EXERCISES_DATA[exercise].reps.min} - ${EXERCISES_DATA[exercise].reps.max}</div>`
-    
+    main.innerHTML += `<div>Повторы : ${EXERCISES_DATA[exercise].reps.min} — ${EXERCISES_DATA[exercise].reps.max} ${weight?'раз':unit}</div>`
+    if (weight) main.innerHTML += `<div>Вес : <b>${weight}</b> ${unit}</div>`
     if (EXERCISES_DATA[exercise].description) main.innerHTML += `<p>${EXERCISES_DATA[exercise].description}</p>`
 
     main.innerHTML += `<details><summary>мышцы:</summary>${addMuscles( EXERCISES_DATA[exercise].muscles )}</details>`
@@ -101,4 +103,3 @@ function addImages(exercise) {
         div.append(img)
     }
 }
-
