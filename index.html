@@ -3,18 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <!-- title and description -->
-        <title>Title</title>
-        <meta name="description" content="Description content.">
+        <title>Домашние тренировки</title>
+        <meta name="description" content="Готовая программа домашних тренировок. Это все что нужно, с вас только турник гантели и штанга!">
         <!-- viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <!-- styles -->
+        <link rel="stylesheet" href="./css/fonts.css" type="text/css">
         <link rel="stylesheet" href="./css/style.css" type="text/css">
         <!-- icons -->
-        <link rel="icon" href="favicon.png"> <!--32х32-->
-        <link rel="apple-touch-icon" href="src/icons/touch-icon-iphone.png"> <!--60х60-->
-        <link rel="apple-touch-icon" sizes="76x76" href="src/icons/touch-icon-ipad.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="src/icons/touch-icon-iphone-retina.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="src/icons/touch-icon-ipad-retina.png">
+        <link rel="icon" href="./favicon.png"> <!--32х32-->
+        <link rel="apple-touch-icon" href="./icons/touch-icon-iphone.png"> <!--60х60-->
+        <link rel="apple-touch-icon" sizes="76x76" href="./icons/touch-icon-ipad.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./icons/touch-icon-iphone-retina.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./icons/touch-icon-ipad-retina.png">
         <!-- open graph -->
         <meta property="og:title" content="Open graph title" />
         <!--
@@ -27,23 +28,29 @@
         -->
         <meta property="og:type" content="article" /> <!-- if not audio and not video -->
         <meta property="og:url" content="https://website.com/" />
-        <meta property="og:image" content="src/icons/og.png" /> <!-- OG image is 1200×630 pixels  -->
+        <meta property="og:image" content="./icons/og.png" /> <!-- OG image is 1200×630 pixels  -->
         <meta property="og:site_name" content="website.com" /> <!-- not important -->
         <meta property="og:description" content="Description content." /> <!-- not important -->
         <meta property="og:locale" content="en_US" /> <!-- default: "en_US" -->
 
         <script defer type="module" src="./js/main.js"></script>
+        <!-- <script defer type="module" src="./js/storage.js"></script> -->
     </head>
     <body>
         <header>
+            <img class="button" id="button-exercises" src="./assets/icon-exercises.svg" alt="💪">
+            <img class="button" id="button-settings" src="./assets/icon-settings.svg" alt="🧩">
             <h2>день № <span>0</span></h2>
-            <h1>...</h1>
-            <h3>_</h3>
+            <h1>плечи, спина и грудь</h1>
+            <h3>Одиночные упражнения</h3>
         </header>
-        <button id="next-day-button">Следующий день</button>
-        <hr><hr>
+        
         <main>
-
+            
         </main>
+
+        <footer>
+            прошлая тренировка <b></b> <span></span>
+        </footer>
     </body>
 </html>
