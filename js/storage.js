@@ -15,7 +15,7 @@ export function getToday() {
 
 export function getStoredDay() {
     const storedDay = localStorage.getItem(STORAGE_KEYS.dayData)
-    if (storedDay === null) return {day: 1, lastData: getToday()}
+    if (storedDay === null) return {day: 0, lastData: getToday()}
     return JSON.parse(storedDay)
 }
 
