@@ -10,8 +10,15 @@ const headerBottomH3 = document.querySelector('header').querySelector('h3')
 
 const exercisesButton = document.getElementById('button-exercises')
 const settingsButton = document.getElementById('button-settings')
-exercisesButton.onclick = () => alert('еще не готово')
-settingsButton.onclick = () => alert('еще не готово')
+exercisesButton.onclick = () => alert('в разработке...')
+settingsButton.onclick = () => {
+    const confirmAnswer = confirm('СБРОСИТЬ ВЕСЬ ПРОГРЕСС И НАСТРОЙКИ ?')
+    if(confirmAnswer) {
+        localStorage.clear()
+        alert('все очищено!')
+        location.reload()
+    }
+}
 
 const main = document.querySelector('main')
 
