@@ -245,11 +245,11 @@ function addSetOfExercises(exercisesArr) {
     main.append(exerciseH4)
 
     const exerciseH6 = document.createElement('h6')
-    exerciseH6.innerText = 'Чередуем упражнения без отдыха'
+    exerciseH6.innerText = 'Чередуем два упражнения без отдыха'
     main.append(exerciseH6)
 
     const exerciseH5 = document.createElement('h5')
-    exerciseH5.innerText = 'Чередуем упражнения без отдыха'
+    exerciseH5.innerText = 'отдых после пары упражнений 60 секунд'
     main.append(exerciseH5)
 
     exercisesArr.forEach( addExerciseData )
@@ -469,3 +469,4 @@ function saveRepsWeightChanges() {
 
     closeModal()
 }
+
