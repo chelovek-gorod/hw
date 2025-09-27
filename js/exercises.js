@@ -664,7 +664,7 @@ export const EXERCISES_DATA = {
     }
 }
 
-const storedExercises = getStoredExercisesData()
+let storedExercises = getStoredExercisesData()
 if (storedExercises) {
     Object.keys(storedExercises).forEach(exercise => {
         if (exercise in EXERCISES_DATA) {
